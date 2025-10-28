@@ -100,6 +100,33 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "gradient-shift": {
+          "0%, 100%": { 
+            backgroundPosition: "0% 50%",
+          },
+          "50%": { 
+            backgroundPosition: "100% 50%",
+          },
+        },
+        "shimmer": {
+          "0%": { 
+            backgroundPosition: "-200% center",
+          },
+          "100%": { 
+            backgroundPosition: "200% center",
+          },
+        },
+        "tilt": {
+          "0%, 100%": {
+            transform: "rotate(0deg)",
+          },
+          "25%": {
+            transform: "rotate(1deg)",
+          },
+          "75%": {
+            transform: "rotate(-1deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -108,6 +135,9 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "wave": "wave 1s ease-in-out infinite",
         "fade-in-up": "fade-in-up 0.6s ease-out",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "shimmer": "shimmer 3s linear infinite",
+        "tilt": "tilt 10s ease-in-out infinite",
       },
     },
   },
